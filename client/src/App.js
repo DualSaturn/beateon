@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import './index.css';
+import Playbutton from './Playbutton';
+import BPMBox from './BPMBox';
+import Grid from './Grid';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          <h1 id="header-name">BEATEON</h1>
+          <button id = "sign-button">Sign up</button>
+          <button id = "log-button">Log in</button>
       </header>
+      <div className="play-bpm-export">
+        <Playbutton />
+        <BPMBox />
+        <button id = "export-button">Export</button>
+      </div>
+      <Grid />
     </div>
   );
 }
